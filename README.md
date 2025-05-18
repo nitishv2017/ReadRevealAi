@@ -42,4 +42,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 > - **Provide powerful AI tools as free, open-source software** accessible to everyone
 > - **Build sustainable products** that don't require ongoing server maintenance
 
-
+<p align="center">
+  <em>Made with ❤️ by AI - VibeCoding</em>
+</p>
