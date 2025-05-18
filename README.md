@@ -21,6 +21,12 @@ ReadReveal AI is a mobile app that uses Google's Gemini API to analyze and expla
 2. Add your API key in the Settings page
 3. Start scanning text!
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/176c2327-a070-441a-8fe5-b5596d0b3aa3" alt="Get API Key" width="30%" style="margin-right: 10px;">
+  <img src="https://github.com/user-attachments/assets/7cee348b-142a-4a51-b320-40f2f8399f4b" alt="Add API Key" width="30%" style="margin: 0 10px;">
+  <img src="https://github.com/user-attachments/assets/6beb5a21-9610-448c-809d-434e37d21bb1" alt="Scan Text" width="30%" style="margin-left: 10px;">
+</p>
+
 ## 🛠️ Built With
 
 - [Flutter](https://flutter.dev/) - UI framework
