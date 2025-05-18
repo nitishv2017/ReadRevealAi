@@ -1,11 +1,7 @@
-# ReadReveal AI 📚🔍
+# ReadReveal AI
 
 <p align="center">
-  <img src="assets/images/logo_RRA.png" alt="ReadReveal AI Logo" width="150">
-</p>
-
-<p align="center">
-  <b>Instantly understand complex text with the power of AI</b>
+  <img src="assets/images/full_RRA.png" alt="ReadReveal AI Logo" width="380">
 </p>
 
 ## 📖 About
@@ -19,19 +15,11 @@ ReadReveal AI is a mobile app that uses Google's Gemini API to analyze and expla
 - 💾 **Save History**: Review your past scans anytime
 - 🔒 **Privacy-Focused**: Your API key is stored securely locally on your device
 
-## 📱 Screenshots
-
-<p align="center">
-  <i>Coming soon!</i>
-</p>
-
 ## 🔧 Getting Started
 
-1. Clone the repository
-2. Run `flutter pub get` to install dependencies 
-3. Get a Gemini API key from [Google AI Studio](https://ai.google.dev/)
-4. Add your API key in the Settings page
-5. Start scanning text!
+1. Get a Gemini API key from [Google AI Studio](https://ai.google.dev/)
+2. Add your API key in the Settings page
+3. Start scanning text!
 
 ## 🛠️ Built With
 
@@ -45,7 +33,7 @@ ReadReveal AI is a mobile app that uses Google's Gemini API to analyze and expla
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 💭 Developer's Comment
+## 💭 Developer's Comment - Bring Your Own API key
 
 > I'm building ReadReveal AI as part of a new wave of serverless applications that put users in control. By using your own API keys directly with LLMs like Google's Gemini, we can:
 > 
@@ -53,6 +41,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 > - **Increase privacy** by keeping your data flowing directly between your device and the AI provider
 > - **Provide powerful AI tools as free, open-source software** accessible to everyone
 > - **Build sustainable products** that don't require ongoing server maintenance
->
-> This "bring-your-own-API-key" approach enables developers like me to create useful tools without the traditional SaaS cost structure, helping democratize access to cutting-edge AI capabilities.
+
 
