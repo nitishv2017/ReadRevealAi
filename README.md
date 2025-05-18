@@ -1,128 +1,58 @@
-# read_reveal_ai
-Here's a high-level `task.md` file for the **ReadRevealAi** app. This file outlines the major tasks and milestones needed to build the app in a structured, modular way.
+# ReadReveal AI 📚🔍
 
----
+<p align="center">
+  <img src="assets/images/logo_RRA.png" alt="ReadReveal AI Logo" width="150">
+</p>
 
-### 📄 `task.md` – ReadRevealAi PRD Tasks
+<p align="center">
+  <b>Instantly understand complex text with the power of AI</b>
+</p>
 
----
+## 📖 About
 
-## 📘 Overview
+ReadReveal AI is a mobile app that uses Google's Gemini API to analyze and explain text in images. Simply take a photo of any text (book, document, sign) and get instant explanations of complex terms.
 
-**App Name**: ReadRevealAi
-**Purpose**: A minimal offline-first mobile app that allows users to capture book pages and get word explanations via Gemini API, with local history and API key management.
+## ✨ Features
 
----
+- 📷 **Capture Text**: Snap a photo of any printed text
+- 🧠 **AI-Powered Analysis**: Uses Google's Gemini API to understand context
+- 💾 **Save History**: Review your past scans anytime
+- 🔒 **Privacy-Focused**: Your API key is stored securely locally on your device
 
-## 🗂️ Pages & Features
+## 📱 Screenshots
 
-### 1. 📷 Camera Page
+<p align="center">
+  <i>Coming soon!</i>
+</p>
 
-* [ ] Integrate device camera using `image_picker` or `camera` package
-* [ ] Add capture button
-* [ ] On image capture:
+## 🔧 Getting Started
 
-  * [ ] Convert image to base64
-  * [ ] Send image and prompt to Gemini API
-  * [ ] Display explanations in a draggable bottom sheet
-* [ ] Allow user to save the result in local history
+1. Clone the repository
+2. Run `flutter pub get` to install dependencies 
+3. Get a Gemini API key from [Google AI Studio](https://ai.google.dev/)
+4. Add your API key in the Settings page
+5. Start scanning text!
 
-### 2. ⚙️ Settings Page
+## 🛠️ Built With
 
-* [ ] Create input form for Gemini API key
-* [ ] Store API key securely using `flutter_secure_storage`
-* [ ] Add validation to ensure the key is stored before any request is made
+- [Flutter](https://flutter.dev/) - UI framework
+- [Gemini API](https://ai.google.dev/) - AI text analysis
+- [Hive](https://docs.hivedb.dev/) - Local storage
+- [Provider](https://pub.dev/packages/provider) - State management
+- [Camera](https://pub.dev/packages/camera) - Image capture
 
-### 3. 🕘 History Page
+## 📄 License
 
-* [ ] Use `hive` or `sqflite` for local database
-* [ ] Save each scanned entry:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-  * image path
-  * explanation response
-  * timestamp
-* [ ] Display scrollable list of history items
+## 💭 Developer's Comment
 
-  * [ ] Thumbnail + summary text
-  * [ ] On tap: show full explanation
-  * [ ] Delete option for individual entries
-
----
-
-## 📦 Project Structure
-
-```
-lib/
-├── main.dart
-├── screens/
-│   ├── camera_screen.dart
-│   ├── settings_screen.dart
-│   └── history_screen.dart
-├── widgets/
-│   ├── bottom_result_sheet.dart
-├── services/
-│   ├── gemini_service.dart
-│   ├── storage_service.dart
-├── models/
-│   └── history_entry.dart
-```
-
----
-
-## 🔐 Security
-
-* [ ] Never hardcode API key
-* [ ] Store securely using `flutter_secure_storage`
-* [ ] Validate key before sending requests
-
----
-
-## 🚀 Milestones
-
-| Milestone          | Description                            | Status |
-| ------------------ | -------------------------------------- | ------ |
-| Project Setup      | Flutter init, dependencies             | ☐      |
-| Camera Integration | Image capture                          | ☐      |
-| Gemini API Call    | Image + prompt => explanation          | ☐      |
-| Bottom Sheet UI    | Display explanation                    | ☐      |
-| Settings Page      | Input and store API key                | ☐      |
-| History Storage    | Save and list previous captures        | ☐      |
-| Final UI Polish    | Styling, dark mode, edge case handling | ☐      |
-| Testing & QA       | Manual testing on Android & iOS        | ☐      |
-
----
-
-## 📱 Tech Stack
-
-* Flutter (Dart)
-* Packages:
-
-  * `camera` or `image_picker`
-  * `flutter_secure_storage`
-  * `hive` or `sqflite`
-  * `http`
-  * `path_provider`
-
----
-
-## 📤 Gemini API (example usage)
-
-**Prompt:**
-
-> "Explain the difficult words in this image. Provide only concise word-level explanations."
-
-**Expected Response:**
-
-```json
-{
-  "words": [
-    {"word": "ineffable", "meaning": "too great to be expressed in words"},
-    {"word": "lucid", "meaning": "clearly expressed"}
-  ]
-}
-```
-
----
-
-Let me know if you'd like a GitHub README version of this or a Notion-compatible version.
+> I'm building ReadReveal AI as part of a new wave of serverless applications that put users in control. By using your own API keys directly with LLMs like Google's Gemini, we can:
+> 
+> - **Eliminate expensive backend costs** that would otherwise be passed to users as subscription fees
+> - **Increase privacy** by keeping your data flowing directly between your device and the AI provider
+> - **Provide powerful AI tools as free, open-source software** accessible to everyone
+> - **Build sustainable products** that don't require ongoing server maintenance
+>
+> This "bring-your-own-API-key" approach enables developers like me to create useful tools without the traditional SaaS cost structure, helping democratize access to cutting-edge AI capabilities.
 
